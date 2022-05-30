@@ -36,6 +36,6 @@ var bulkCmd = &cobra.Command{
 
 func init() {
 	rootCmd.AddCommand(bulkCmd)
-	bulkCmd.Flags().Float64VarP(&opacityBulk, "opacity", "o", 0.25, fmt.Sprintf("Opacity can be used to overwrite the default opacity (%v) of the image being used as the watermark. It expects a float between 0.0 and 1.0.", defaultOpacityBulk))
+	bulkCmd.Flags().Float64VarP(&opacityBulk, "opacity", "o", defaultOpacityBulk, "Opacity can be used to overwrite the default opacity of the image being used as the watermark. It expects a float between 0.0 and 1.0")
 	bulkCmd.Flags().StringVarP(&outputFolder, "name", "n", "watermarked/", "Name can be used to customize the name of the generated folder containing the new watermarked images.")
 }
