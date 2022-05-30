@@ -18,7 +18,7 @@ var bulkCmd = &cobra.Command{
 	Long: `The "bulk" command is used to watermark multiple images at once. It takes
 	two arguments, first a folder containing images to be watermarked, and second
 	an image to apply as the watermark. The level of opacity for the watermark image
-	can be overwritten with the "--opactiy" or "-o" flag. By default, the watermarked
+	can be overwritten with the "--opacity" or "-o" flag. By default, the watermarked
 	images will be saved in a new folder named "watermarked" within the current directory,
 	to override the "watermarked" folder name  use the "--name" or "-n" flag and
 	provide a name for the new folder.`,
